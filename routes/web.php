@@ -18,5 +18,8 @@ Route::get('/', function () {
 Route::get('/test', function () {
     return view('welcome');
 });
+Route::get('/test1', function () {
+    echo "测试API";
+});
 
 Route::any('test/{action}', 'TestController@index');
