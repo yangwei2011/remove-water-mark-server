@@ -33,5 +33,7 @@ Route::group(['prefix' => 'auth', 'namespace' => 'Auth'], function () {
 Route::group([], function () {
     Route::post('log/notice', 'RecordController@notice');
 });
-
+Route::get('/test2', function () {
+    echo "测试API2";
+});
 
